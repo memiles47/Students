@@ -10,6 +10,7 @@ namespace Students
 {
     static class Program
     {
+        //VS unuseable offline after 15.2 update
         private static void Main()
         {
             var alison = new ArrayList() {"ID0001", 26, "A"};
