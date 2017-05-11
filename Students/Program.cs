@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Students
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             var alison = new ArrayList() {"ID0001", 26, "A"};
             var bob = new ArrayList() {"ID0002", 27, "B"};
