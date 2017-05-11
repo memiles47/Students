@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 namespace Students
 {
     class Program
+        //Wierd changes to the color scheme of VS after the last update.
     {
         static void Main(string[] args)
         {
