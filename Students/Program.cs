@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace Students
@@ -8,24 +7,17 @@ namespace Students
     {
         private static void Main()
         {
-            var alison = new ArrayList() {"ID0001", 26, "A"};
-            var bob = new ArrayList() {"ID0002", 27, "B"};
-            var claire = new ArrayList() {"ID0003", 17, "C"};
-            var dan = new ArrayList() {"ID0004", 21, "D"};
-            var emma = new ArrayList() {"ID0005", 22, "E"};
-
-
-            foreach (var item in alison)
-                Console.WriteLine(item);
-
-            var students = new Dictionary<string, ArrayList>
+            var students = new Dictionary<string, Dictionary<string, string>>()
             {
-                {"Alison", alison},
-                { "Bob", bob},
-                { "Claire", claire},
-                { "Dan", dan},
-                { "Emma", emma}
+                {"Alison", new Dictionary<string, string>{ { "ID", "ID0001" }, { "Age", "26" }, {"Grade", "A" } } },
+                {"Bob", new Dictionary<string, string>{ { "ID", "ID0001" }, { "Age", "26" }, {"Grade", "A" } } },
+                {"Claire", new Dictionary<string, string>{ { "ID", "ID0001" }, { "Age", "26" }, {"Grade", "A" } } },
+                {"Dan", new Dictionary<string, string>{ { "ID", "ID0001" }, { "Age", "26" }, {"Grade", "A" } } },
+                {"Emma", new Dictionary<string, string>{ { "ID", "ID0001" }, { "Age", "26" }, {"Grade", "A" } } }
             };
+
+            Console.WriteLine($"Alison's ID is: {students["Alison"]["ID"]}\n");
+            Console.WriteLine($"Dan's ID is: {students["Dan"]["ID"]} and he is {students["Dan"]["Age"]} years old.");
         }
     }
 }
